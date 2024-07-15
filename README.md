@@ -1,4 +1,4 @@
-<img src="https://telegra.ph/file/b7fbbb78834741c889319.jpg" alt="logo" target="/blank">
+<img src="https://telegra.ph/file/fd8681bfdfe99df160802.jpg" alt="logo" target="/blank">
 
 <h1 align="center">
  <b><a href="https://github.com/Sakazuki-Akainu/Akainu" target="/blank"> Auto Rename Bot </a></>
