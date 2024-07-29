@@ -18,6 +18,7 @@ class Bot(Client):
             plugins={"root": "plugins"},
             sleep_threshold=15,
         )
+        self.admins = set(Config.ADMIN)  # Set of authorized user IDs
 
     async def start(self):
         await super().start()
@@ -42,11 +43,12 @@ class Bot(Client):
             except:
                 print("Please Make This Is Admin In Your Log Channel")
 
+    async def on_message(self, message):
+        # Check if the user is authorized
+        if message.from_user.id not in self.admins:
+            return  # Ignore messages from unauthorized users
+
+        # Process authorized user messages here
+        await super().on_message(message)
+
 Bot().run()
-
-
-
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Developer @JishuDeveloper
