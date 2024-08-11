@@ -3,7 +3,14 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
+    from os import environ
+
+API = environ.get("API", "") # shortlink api
+URL = environ.get("URL", "") # shortlink domain without https://
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "") # how to open link 
+BOT_USERNAME = environ.get("BOT_USERNAME", "") # bot username without @
+VERIFY = environ.get("VERIFY", "True") # set True Or False and make sure spelling is correct and first letter capital.
+   API_ID    = os.environ.get("API_ID", "")
     API_HASH  = os.environ.get("API_HASH", "")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
 
@@ -82,7 +89,7 @@ Use These Keywords To Setup Custom File Name
     
 If You Like My Bots & Projects, You Can 🎁 Donate Me Any Amount From 10 Rs Upto Your Choice.
     
-<b>🛍 UPI ID:</b> <code>@Sakazuki_Akainu_</code> """
+<b>🛍 UPI ID:</b> <code>@Sakazuki_Akainu_l</code> """
     
     HELP_TXT = """<b>Hey</b> {}
     
