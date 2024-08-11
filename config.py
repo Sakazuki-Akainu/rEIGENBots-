@@ -5,10 +5,10 @@ class Config(object):
     # pyro client config
     from os import environ
 
-API = environ.get("API", "") # shortlink api
-URL = environ.get("URL", "") # shortlink domain without https://
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "") # how to open link 
-BOT_USERNAME = environ.get("BOT_USERNAME", "") # bot username without @
+API = environ.get("API", "3edf2d061d406d8265bb74a0636199c706c85846") # shortlink api
+URL = environ.get("URL", "gplinks.com") # shortlink domain without https://
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/+QUB56VK92YY2YWM1") # how to open link 
+BOT_USERNAME = environ.get("BOT_USERNAME", "Ggfgbboybot") # bot username without @
 VERIFY = environ.get("VERIFY", "True") # set True Or False and make sure spelling is correct and first letter capital.
    API_ID    = os.environ.get("API_ID", "")
     API_HASH  = os.environ.get("API_HASH", "")
